@@ -53,6 +53,7 @@ EXCLUDED_PATTERNS+=(
   "verify-shellcheck.sh"                    # TODO(soltysh) Requires either docker or local shellcheck
   "verify-spelling.sh"                      # TODO(soltysh) Need to ensure installation of misspell command
   "verify-mocks.sh"                         # TODO(soltysh) I don't expect us needed mocks re-generation
+  "verify-go-workspace.sh"                  # TODO(dinhxuanvu) We don't run `go work vendor` during `make update` so skip verify this
 )
 
 # Exclude typecheck in certain cases, if they're running in a separate job.
