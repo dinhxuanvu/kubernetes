@@ -1379,8 +1379,6 @@ var Annotations = map[string]string{
 
 	"[sig-network] Services should work after the service has been recreated": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-network] TrafficDistribution when Service has trafficDistribution=PreferClose should route traffic to an endpoint that is close to the client": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
-
 	"[sig-network] [Feature:IPv6DualStack] Granular Checks: Services Secondary IP Family [LinuxOnly] should be able to handle large requests: http": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
 	"[sig-network] [Feature:IPv6DualStack] Granular Checks: Services Secondary IP Family [LinuxOnly] should be able to handle large requests: udp": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
@@ -1432,6 +1430,8 @@ var Annotations = map[string]string{
 	"[sig-network] [Feature:ServiceCIDRs] should create Services and servce on different Service CIDRs": " [Disabled:Alpha] [Suite:k8s]",
 
 	"[sig-network] [Feature:Topology Hints] should distribute endpoints evenly": " [Disabled:SpecialConfig] [Suite:k8s]",
+
+	"[sig-network] [Feature:Traffic Distribution] when Service has trafficDistribution=PreferClose should route traffic to an endpoint that is close to the client": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
 	"[sig-node] AppArmor load AppArmor profiles can disable an AppArmor profile, using unconfined": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
@@ -1783,13 +1783,13 @@ var Annotations = map[string]string{
 
 	"[sig-node] Security Context When creating a container with runAsUser should run the container with uid 65534 [LinuxOnly] [NodeConformance] [Conformance]": " [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
 
-	"[sig-node] Security Context When creating a pod with HostUsers must create the user namespace if set to false [LinuxOnly] [Feature:UserNamespacesSupport]": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] Security Context When creating a pod with HostUsers must create the user namespace if set to false [LinuxOnly] [Feature:UserNamespacesSupport]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-node] Security Context When creating a pod with HostUsers must not create the user namespace if set to true [LinuxOnly] [Feature:UserNamespacesSupport]": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] Security Context When creating a pod with HostUsers must not create the user namespace if set to true [LinuxOnly] [Feature:UserNamespacesSupport]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-node] Security Context When creating a pod with HostUsers should mount all volumes with proper permissions with hostUsers=false [LinuxOnly] [Feature:UserNamespacesSupport]": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] Security Context When creating a pod with HostUsers should mount all volumes with proper permissions with hostUsers=false [LinuxOnly] [Feature:UserNamespacesSupport]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-node] Security Context When creating a pod with HostUsers should set FSGroup to user inside the container with hostUsers=false [LinuxOnly] [Feature:UserNamespacesSupport]": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] Security Context When creating a pod with HostUsers should set FSGroup to user inside the container with hostUsers=false [LinuxOnly] [Feature:UserNamespacesSupport]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
 	"[sig-node] Security Context When creating a pod with privileged should run the container as privileged when true [LinuxOnly] [NodeFeature:HostAccess]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
@@ -1865,11 +1865,11 @@ var Annotations = map[string]string{
 
 	"[sig-node] [Feature:Example] Secret should create a pod that reads a secret": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-node] [Feature:PodLifecycleSleepAction] when create a pod with lifecycle hook using sleep action ignore terminated container": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] [Feature:PodLifecycleSleepAction] when create a pod with lifecycle hook using sleep action ignore terminated container": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-node] [Feature:PodLifecycleSleepAction] when create a pod with lifecycle hook using sleep action reduce GracePeriodSeconds during runtime": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] [Feature:PodLifecycleSleepAction] when create a pod with lifecycle hook using sleep action reduce GracePeriodSeconds during runtime": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-node] [Feature:PodLifecycleSleepAction] when create a pod with lifecycle hook using sleep action valid prestop hook using sleep action": " [Disabled:Alpha] [Suite:k8s]",
+	"[sig-node] [Feature:PodLifecycleSleepAction] when create a pod with lifecycle hook using sleep action valid prestop hook using sleep action": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
 	"[sig-node] [NodeFeature:SidecarContainers] [Feature:SidecarContainers] Probing restartable init container should *not* be restarted by liveness probe because startup probe delays it": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
