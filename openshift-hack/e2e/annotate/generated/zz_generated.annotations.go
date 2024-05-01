@@ -2,6 +2,7 @@ package generated
 
 import (
 	"fmt"
+
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/ginkgo/v2/types"
 )
@@ -2025,25 +2026,25 @@ var Annotations = map[string]string{
 
 	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not pass SELinux mount option for RWO volume with SELinuxMount disabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [Feature:SELinuxMountReadWriteOncePodOnly]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWO volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
+	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWO volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Disabled:Alpha] [Suite:k8s]",
 
 	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWOP volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should pass SELinux mount option for RWO volume with SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
+	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should pass SELinux mount option for RWO volume with SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Disabled:Alpha] [Suite:k8s]",
 
 	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should pass SELinux mount option for RWOP volume and Pod with SELinux context set [FeatureGate:SELinuxMountReadWriteOncePod] [Beta]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should unstage RWO volume when starting a second pod with different SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
+	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should unstage RWO volume when starting a second pod with different SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Disabled:Alpha] [Suite:k8s]",
 
 	"[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should unstage RWOP volume when starting a second pod with different SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta]": " [Suite:openshift/conformance/parallel] [Suite:k8s]",
 
-	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Suite:openshift/conformance/serial] [Suite:k8s]",
+	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Disabled:Alpha] [Suite:k8s]",
 
 	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWOP volume [FeatureGate:SELinuxMountReadWriteOncePod] [Beta]": " [Suite:openshift/conformance/serial] [Suite:k8s]",
 
-	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWX volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Suite:openshift/conformance/serial] [Suite:k8s]",
+	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWX volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Disabled:Alpha] [Suite:k8s]",
 
-	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is not bumped on two Pods with the same context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Suite:openshift/conformance/serial] [Suite:k8s]",
+	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is not bumped on two Pods with the same context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha]": " [Disabled:Alpha] [Suite:k8s]",
 
 	"[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] warning is bumped on two Pods with a different context on RWO volume [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [Feature:SELinuxMountReadWriteOncePodOnly]": " [Suite:openshift/conformance/serial] [Suite:k8s]",
 
