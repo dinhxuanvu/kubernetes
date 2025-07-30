@@ -38,7 +38,7 @@ func RecommendedDefaultNodeLifecycleControllerConfiguration(obj *kubectrlmgrconf
 		obj.PodEvictionTimeout = metav1.Duration{Duration: 5 * time.Minute}
 	}
 	if obj.NodeMonitorGracePeriod == zero {
-		obj.NodeMonitorGracePeriod = metav1.Duration{Duration: 40 * time.Second}
+		obj.NodeMonitorGracePeriod = metav1.Duration{Duration: 50 * time.Second}
 	}
 	if obj.NodeStartupGracePeriod == zero {
 		obj.NodeStartupGracePeriod = metav1.Duration{Duration: 60 * time.Second}

@@ -86,7 +86,7 @@ const (
 	// DefaultNodeStatusUpdateFrequency refers to the "--node-status-update-frequency" of the kubelet in case of DefaultUpdateDefaultReaction WorkerLatencyProfile type
 	DefaultNodeStatusUpdateFrequency = 10 * time.Second
 	// DefaultNodeMonitorGracePeriod refers to the "--node-monitor-grace-period" of the Kube Controller Manager in case of DefaultUpdateDefaultReaction WorkerLatencyProfile type
-	DefaultNodeMonitorGracePeriod = 40 * time.Second
+	DefaultNodeMonitorGracePeriod = 50 * time.Second
 	// DefaultNotReadyTolerationSeconds refers to the "--default-not-ready-toleration-seconds" of the Kube API Server in case of DefaultUpdateDefaultReaction WorkerLatencyProfile type
 	DefaultNotReadyTolerationSeconds = 300
 	// DefaultUnreachableTolerationSeconds refers to the "--default-unreachable-toleration-seconds" of the Kube API Server in case of DefaultUpdateDefaultReaction WorkerLatencyProfile type

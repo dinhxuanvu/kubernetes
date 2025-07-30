@@ -149,7 +149,7 @@ var args = []string{
 	"--node-cidr-mask-size-ipv4=48",
 	"--node-cidr-mask-size-ipv6=108",
 	"--node-eviction-rate=0.2",
-	"--node-monitor-grace-period=30s",
+	"--node-monitor-grace-period=50s",
 	"--node-monitor-period=10s",
 	"--node-startup-grace-period=30s",
 	"--profiling=false",
@@ -349,7 +349,7 @@ func TestAddFlags(t *testing.T) {
 			&nodelifecycleconfig.NodeLifecycleControllerConfiguration{
 				NodeEvictionRate:          0.2,
 				SecondaryNodeEvictionRate: 0.05,
-				NodeMonitorGracePeriod:    metav1.Duration{Duration: 30 * time.Second},
+				NodeMonitorGracePeriod:    metav1.Duration{Duration: 50 * time.Second},
 				NodeStartupGracePeriod:    metav1.Duration{Duration: 30 * time.Second},
 				LargeClusterSizeThreshold: 100,
 				UnhealthyZoneThreshold:    0.6,
@@ -595,7 +595,7 @@ func TestApplyTo(t *testing.T) {
 			NodeLifecycleController: nodelifecycleconfig.NodeLifecycleControllerConfiguration{
 				NodeEvictionRate:          0.2,
 				SecondaryNodeEvictionRate: 0.05,
-				NodeMonitorGracePeriod:    metav1.Duration{Duration: 30 * time.Second},
+				NodeMonitorGracePeriod:    metav1.Duration{Duration: 50 * time.Second},
 				NodeStartupGracePeriod:    metav1.Duration{Duration: 30 * time.Second},
 				LargeClusterSizeThreshold: 100,
 				UnhealthyZoneThreshold:    0.6,
@@ -1258,7 +1258,7 @@ func TestValidateControllersOptions(t *testing.T) {
 				&nodelifecycleconfig.NodeLifecycleControllerConfiguration{
 					NodeEvictionRate:          0.2,
 					SecondaryNodeEvictionRate: 0.05,
-					NodeMonitorGracePeriod:    metav1.Duration{Duration: 30 * time.Second},
+					NodeMonitorGracePeriod:    metav1.Duration{Duration: 50 * time.Second},
 					NodeStartupGracePeriod:    metav1.Duration{Duration: 30 * time.Second},
 					LargeClusterSizeThreshold: 100,
 					UnhealthyZoneThreshold:    0.6,
